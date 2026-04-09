@@ -35,7 +35,7 @@ export default function Audit() {
         extractTextFromPdf(invoiceFile)
       ]);
 
-      setStatus('AI is analyzing documents (Groq -> Cerebras)...');
+      setStatus('AI is analyzing documents...');
       const result = await performAudit(quoteText, invoiceText);
 
       setStatus('Saving results...');
